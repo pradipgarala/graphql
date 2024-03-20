@@ -1,6 +1,13 @@
 type Query {
     allBooks: [Book]
     findOne(id: ID): Book
+    allAuthors: [Author]
+}
+
+type Mutation {
+    createAuthor(firstName: String!, lastName: String!) : Author
+    updateAuthor(id: ID!, firstName: String!, lastName: String!) : Author
+    deleteAuthor(id: ID!): Author
 }
 
 type Book {
