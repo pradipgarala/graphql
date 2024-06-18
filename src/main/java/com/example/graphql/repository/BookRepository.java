@@ -32,7 +32,7 @@ public class BookRepository {
     @PostConstruct
     private void init() {
         books.add(new Book(1, "Reactive Spring", 484, Rating.FIVE_STAR, authorRepository.findByFirstName("Josh")));
-        books.add(new Book(2, "Spring Boot Up & Running", 328, Rating.FIVE_STAR, authorRepository.findByFirstName("Mark")));
-        books.add(new Book(3, "Heckling with Spring Boot 2.3", 392, Rating.FIVE_STAR, authorRepository.findByFirstName("Greg")));
+        books.add(new Book(2, "Spring Boot Up & Running", 328, Rating.FOUR_STAR, authorRepository.findByFirstName("Mark")));
+        books.add(new Book(3, "Heckling with Spring Boot 2.3", 392, Rating.THREE_STAR, authorRepository.findByFirstName("Greg")));
     }
 }
